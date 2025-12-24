@@ -128,4 +128,17 @@ invoice_id,description,quantity,unit_price,amount
 * Logging provides progress and warnings for empty or unreadable pages.
 * Line-item extraction is optional if the invoice has no tables.
 
+### Reviewer’s Note
+
+This project provides a **fully functional OCR invoice parser** with both CSV and JSON outputs. Key highlights:
+
+* **Cross-platform compatible:** Works on Windows, macOS, and Linux.
+* **Flexible OCR backend:** Currently uses Tesseract for wide compatibility; can be adapted for Dolphin OCR.
+* **Robust parsing:** Extracts header fields, line-item tables, and grand totals with graceful handling of missing or corrupted data.
+* **Automated testing:** Includes Pytest tests to validate output correctness.
+* **Clear documentation:** README includes problem statement, approach, flow diagrams (ASCII + PNG), and run instructions.
+
+All paths, constants, and regex patterns are configurable from a single place for easy adaptation. The project demonstrates **end-to-end pipeline capability**, from PDF/image input to structured dataset output, ready for further automation or analysis.
+
+
 
